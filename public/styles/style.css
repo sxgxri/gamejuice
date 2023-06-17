@@ -1,0 +1,529 @@
+@font-face {
+    font-family: "Fregat";
+    font-weight: 400;
+    src: local("Fregat"),
+         url("../fonts/Fregat_regular.otf") format("otf"),
+         url("../fonts/Fregat_regular.woff2") format("woff2"),
+         url("../fonts/Fregat_regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Fregat";
+    font-weight: 400;
+    src: local("Fregat"),
+         url("../fonts/Fregat_bold.otf") format("otf"),
+         url("../fonts/Fregat_bold.woff2") format("woff2"),
+         url("../fonts/Fregat_bold.woff") format("woff");
+  }
+
+*{
+  padding: 0 ;
+  margin: 0 auto;
+  border: none;
+}
+
+body {
+    font-family: "Fregat", "Arial", sans-serif;
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+
+/*ШАПКА*/
+.header{
+  height: 150px;
+}
+
+.header-menu-1{
+  background-color: rgba(15, 15, 15, 0.358);
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sources{
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sources .vk a img{
+  padding: 6px;
+  height: 32px;
+  width: 32px;
+}
+.sources .tg a img{
+  padding: 6px;
+  height: 32px;
+  width: 32px;
+}
+
+.login a{
+  text-decoration: none;
+  color: rgb(241, 241, 241);
+}
+
+.header-menu-2{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #202020, #151515);
+  width: 85%;
+  height: 70%;
+  box-shadow: 0px 0px 9px -1px #000000;
+}
+
+.logo{
+  margin: 0;
+  padding: 15px;
+}
+
+.logo a img{
+  width: 190px;
+  height: 105px;
+}
+
+.menu-buttons{
+  padding-right: 50px;
+  margin: 0;
+  width: 35%;
+  display: flex;
+}
+
+.menu-buttons a{
+    padding-right: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*МЕЙН*/
+.main .name_text{
+    margin-top: 25px;
+    font-size: 30px;
+    position: absolute;
+    left: 15%;
+}
+
+
+.main-container{
+    min-height: 410px;
+    padding: 10px;
+    display: block;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 80%;
+    background: linear-gradient(90deg, #f8f8f8de, #fcfcfce3);
+    box-shadow: 0px 0px 12px -1px #000000;
+}
+
+.main-container .name_text{
+    font-size: 2vw;
+}
+
+/*ФОРМА АВТОРИЗАЦИИ*/
+.login_form form{
+    width: 400px;
+}
+.login_form form div{
+    width: 400px;
+    margin-bottom: 15px;
+}
+.login_form form div div{
+    width: 400px;
+}
+.login_form form div div input{
+    box-shadow:2px 1px 4px 1px rgba(0,0,0,0.51);
+    width: 400px;
+    height: 35px;
+
+}
+.login_form form .row{
+    width: 400px;
+    height: 50px;
+}
+.login_form form .row div{
+    width: 400px;
+    height: 50px;
+}
+.login_form form .row div button{
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+    box-shadow:0px 1px 0px 2px rgba(0,0,0,0.51);
+    font-size: 20px;
+}
+
+.login_form form div div .form-check-input{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/*ФОРМА РЕГИСТРАЦИИ*/
+
+.register_form form{
+    width: 400px;
+}
+.register_form form div{
+    width: 400px;
+    margin-bottom: 15px;
+}
+.register_form form div div{
+    width: 400px;
+}
+.register_form form div div input{
+    box-shadow:2px 1px 4px 1px rgba(0,0,0,0.51);
+    width: 400px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+.register_form form .row{
+    width: 400px;
+    height: 50px;
+}
+.register_form form .row div{
+    width: 400px;
+    height: 50px;
+}
+.register_form form .row div button{
+    font-size: 18px;
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+    box-shadow:0px 1px 0px 2px rgba(0,0,0,0.51);
+}
+
+.register_form form div div .form-check-input{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/*БЛОКИ*/
+.random_block{
+    padding: 2px;
+    display: block;
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 14px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    width: 260px;
+    background: linear-gradient(90deg, #202020, #151515);
+    box-shadow:0px 1px 0px 2px rgba(0,0,0,0.51);
+    -webkit-box-shadow:0px 1px 0px 2px rgba(0,0,0,0.51);
+    -moz-box-shadow:0px 1px 0px 2px rgba(0,0,0,0.51);
+    height: 250px;
+}
+
+.random_block_text{
+    display: flex;
+    width: 100%;
+    height: 38px;
+    background: linear-gradient(90deg, #202020, #151515);
+}
+
+.random_block a{
+    font-size: 12px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.random_block_image{
+    height: 86%;
+    width: 100%;
+}
+.random_block_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.random_posts{
+    box-shadow: 1px 1px 10px 1px black;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #737373, #656565);
+    padding-top: 30px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.random_posts h4{
+    font-size: 20px;
+    position: absolute;
+    left: 11%;
+}
+
+.popular_block{
+    padding: 2px;
+    display: block;
+    margin-top: 25px;
+    margin-right: 14px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    width: 556px;
+    background: linear-gradient(90deg, #202020, #151515);
+    box-shadow:0px 1px 0px 2px rgba(0,0,0,0.51);
+    -webkit-box-shadow:0px 1px 0px 2px rgba(0,0,0,0.51);
+    -moz-box-shadow:0px 1px 0px 2px rgba(0,0,0,0.51);
+    height: 300px;
+}
+
+.popular_block_text{
+    display: flex;
+    width: 100%;
+    height: 38px;
+    background: linear-gradient(90deg, #202020, #151515);
+}
+
+.popular_block a{
+    font-size: 16px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.popular_block_image{
+    height: 86%;
+    width: 100%;
+}
+.popular_block_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.popular_posts{
+    box-shadow: 1px 1px 10px 1px black;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #949494, #7e7e7e);
+    padding-top: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.popular_posts h4{
+    font-size: 20px;
+    position: absolute;
+    left: 11%;
+}
+
+
+.random_articles{
+    box-shadow: 1px 1px 10px 1px black;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #737373, #656565);
+    padding-top: 30px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.random_articles h4{
+    font-size: 20px;
+    position: absolute;
+    left: 11%;
+}
+
+.all_articles{
+    box-shadow: 1px 1px 10px 1px black;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #949494, #7e7e7e);
+    padding-top: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.all_articles h4{
+    font-size: 20px;
+    position: absolute;
+    left: 11%;
+}
+
+.show_game{
+    box-shadow: 1px 1px 10px 1px black;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #737373, #656565);
+    padding-top: 30px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.show_game h4{
+    font-size: 20px;
+    position: absolute;
+    left: 11%;
+}
+
+.post_image {
+    margin-top: 8vw;
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .post_image{
+        margin-top: 14vw;
+    }
+    .header-menu-2{
+        width: 100%;
+    }
+    .logo{
+        padding: 5px;
+    }
+    .menu-buttons a{
+        padding: 5px;
+    }
+    .menu-buttons{
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+}
+
+
+.post_image img{
+    width: 70vw;
+    border-radius: 10px;
+}
+.post_content{
+    margin-left:6%;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.comments{
+    width: 68vw;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.comments_form{
+    margin-top: 1vw;
+    padding: 10px;
+    background: linear-gradient(90deg, #202020, #151515);
+    color: white;
+    width: 68vw;
+    border-radius: 10px;
+}
+
+.comments_form textarea{
+    margin-top: 1vw;
+    width: 68vw;
+    height: 6vw;
+    resize: none;
+}
+
+.submit_comment input{
+    margin: 2px;
+    height: 32px;
+    width: 180px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgba(41, 140, 11, 0.85);
+    color: white;
+}
+
+.comment_block {
+    margin-top: 1vw;
+    padding: 10px;
+    background: linear-gradient(90deg, #3f3f3f, #2c2c2c);
+    color: white;
+    width: 68vw;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.comment_block .comment_name{
+    font-size: 18px;
+    text-decoration: underline;
+}
+.comment_block .comment_text{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.comment_block .comment_time{
+    font-size: 10px;
+    padding-top: 24px;
+}
+
+.like{
+    width: 68vw;
+    margin-top: 20px;
+}
+.like button{
+    width: 20px;
+}
+.like img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container .footer-text a{
+    text-decoration: none;
+    color: #676767;
+}
+
+.ftr-btn a{
+    text-decoration: none;
+    color: #b9b9b9;
+}
+
+.ftr-btn a:hover{
+    text-decoration: underline;
+}
+
+.footer-logo{
+    background: url("../images/logo.png");
+    opacity: 50%;
+    height: 110px;
+    width: 200px;
+}
+
+.about-text{
+    width: 88%;
+    margin-top: 80px;
+}
+
+
